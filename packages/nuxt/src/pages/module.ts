@@ -186,7 +186,7 @@ export default defineNuxtModule({
     })
 
     // Prerender all non-dynamic page routes when generating app
-    if (!nuxt.options.dev && nuxt.options._generate) {
+    if (!nuxt.options.dev && nuxt.options._generate && !nuxt.options.router.options.hashMode) {
       const prerenderRoutes = new Set<string>()
       nuxt.hook('modules:done', () => {
         nuxt.hook('pages:extend', (pages) => {
