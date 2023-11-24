@@ -1,5 +1,6 @@
 {
   "name": "nuxt-framework",
+  "version": "3.5.1",
   "private": true,
   "repository": "nuxt/nuxt",
   "license": "MIT",
